@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food cafe</title>
+    <script>
+        function show()
+        {
+let a=parseInt(document.getElementById("m1").value);
+if(a==1)
+{
+    {location.replace("pizza.html")}
+}
+else if(a==2)
+{
+    {location.replace("dosa.html")}
+}
+else if(a==3)
+{
+    {location.replace("burger.html")}
+}
+else{
+    {location.replace("sorry.html")}
+}
+        }
+    </script>
+</head>
+<body>
+    <h1 style="text-align:center ; "><b>Food Cafe</b></h1>
+    <div>
+        <h2 style="text-align:center ;">Menu</h2>
+        <ol>
+            <li>pizza</li>
+            <li>Dosa</li>
+            <li>Burger</li>
+        </ol>
+    </div>
+    <div>
+        <form>
+            <input type="text" id="m1" placeholder="enter the food choice"/>
+            <input type="button" onclick="show()" value="Enter"/>
+        </form>
+    </div>
+</body>
+</html>
